@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t qiuchenguo/around .
+          docker build -t haoyuanliu/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push qiuchenguo/around
+          docker push haoyuanliu/around
